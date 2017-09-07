@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Core", "LuxMeet.Core\LuxMeet.Core.csproj", "{81208F96-6A8C-4521-862F-A0C986F1B849}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.EFCore", "..\NokMeet.EFCore\LuxMeet.EFCore.csproj", "{972C53C5-7312-407B-A418-57303DBE6297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.EFCore.Test", "NokMeet.EFCore.Test\LuxMeet.EFCore.Test.csproj", "{CBCCDAFA-8573-459B-A777-4C833FF9005D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.DbModels", "NokMeet.Models\LuxMeet.DbModels.csproj", "{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Repository", "LuxMeet.Repository\LuxMeet.Repository.csproj", "{FA4FA713-CABF-402B-8E77-48C6C142DDF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Repository.Test", "LuxMeet.Repository.Test\LuxMeet.Repository.Test.csproj", "{904039AF-7589-4C93-A79A-F0AB470987F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{81208F96-6A8C-4521-862F-A0C986F1B849}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81208F96-6A8C-4521-862F-A0C986F1B849}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81208F96-6A8C-4521-862F-A0C986F1B849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972C53C5-7312-407B-A418-57303DBE6297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972C53C5-7312-407B-A418-57303DBE6297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972C53C5-7312-407B-A418-57303DBE6297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972C53C5-7312-407B-A418-57303DBE6297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCCDAFA-8573-459B-A777-4C833FF9005D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCCDAFA-8573-459B-A777-4C833FF9005D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCCDAFA-8573-459B-A777-4C833FF9005D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCCDAFA-8573-459B-A777-4C833FF9005D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4FA713-CABF-402B-8E77-48C6C142DDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4FA713-CABF-402B-8E77-48C6C142DDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4FA713-CABF-402B-8E77-48C6C142DDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4FA713-CABF-402B-8E77-48C6C142DDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904039AF-7589-4C93-A79A-F0AB470987F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904039AF-7589-4C93-A79A-F0AB470987F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904039AF-7589-4C93-A79A-F0AB470987F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904039AF-7589-4C93-A79A-F0AB470987F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
