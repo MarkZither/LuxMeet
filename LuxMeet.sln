@@ -3,17 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Core", "LuxMeet.Core\LuxMeet.Core.csproj", "{81208F96-6A8C-4521-862F-A0C986F1B849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxMeet.Core", "LuxMeet.Core\LuxMeet.Core.csproj", "{81208F96-6A8C-4521-862F-A0C986F1B849}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.EFCore", "..\NokMeet.EFCore\LuxMeet.EFCore.csproj", "{972C53C5-7312-407B-A418-57303DBE6297}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.EFCore.Test", "NokMeet.EFCore.Test\LuxMeet.EFCore.Test.csproj", "{CBCCDAFA-8573-459B-A777-4C833FF9005D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxMeet.EFCore.Test", "NokMeet.EFCore.Test\LuxMeet.EFCore.Test.csproj", "{CBCCDAFA-8573-459B-A777-4C833FF9005D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.DbModels", "NokMeet.Models\LuxMeet.DbModels.csproj", "{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxMeet.DbModels", "NokMeet.Models\LuxMeet.DbModels.csproj", "{B06E9FDB-4DE2-47AB-93D5-1F445EE1E4C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Repository", "LuxMeet.Repository\LuxMeet.Repository.csproj", "{FA4FA713-CABF-402B-8E77-48C6C142DDF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxMeet.Repository", "LuxMeet.Repository\LuxMeet.Repository.csproj", "{FA4FA713-CABF-402B-8E77-48C6C142DDF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Repository.Test", "LuxMeet.Repository.Test\LuxMeet.Repository.Test.csproj", "{904039AF-7589-4C93-A79A-F0AB470987F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxMeet.Repository.Test", "LuxMeet.Repository.Test\LuxMeet.Repository.Test.csproj", "{904039AF-7589-4C93-A79A-F0AB470987F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxMeet.EFCoreTemp", "LuxMeet.EFCoreTemp\LuxMeet.EFCoreTemp.csproj", "{53BFF240-450C-4653-85E9-1810AD011976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.ViewModels", "LuxMeet.ViewModels\LuxMeet.ViewModels.csproj", "{1C83AFCE-C1E7-4B7A-9808-0229352FE8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.ViewModels.Test", "LuxMeet.ViewModels.Test\LuxMeet.ViewModels.Test.csproj", "{33CF377B-0A76-4495-8F81-8B6D28789287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxMeet.Core.Test", "LuxMeet.Core.Test\LuxMeet.Core.Test.csproj", "{6DDAC836-AC25-4512-9B9C-98DF96023D6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,22 @@ Global
 		{904039AF-7589-4C93-A79A-F0AB470987F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{904039AF-7589-4C93-A79A-F0AB470987F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{904039AF-7589-4C93-A79A-F0AB470987F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BFF240-450C-4653-85E9-1810AD011976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BFF240-450C-4653-85E9-1810AD011976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BFF240-450C-4653-85E9-1810AD011976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BFF240-450C-4653-85E9-1810AD011976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C83AFCE-C1E7-4B7A-9808-0229352FE8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C83AFCE-C1E7-4B7A-9808-0229352FE8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C83AFCE-C1E7-4B7A-9808-0229352FE8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C83AFCE-C1E7-4B7A-9808-0229352FE8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33CF377B-0A76-4495-8F81-8B6D28789287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33CF377B-0A76-4495-8F81-8B6D28789287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33CF377B-0A76-4495-8F81-8B6D28789287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33CF377B-0A76-4495-8F81-8B6D28789287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDAC836-AC25-4512-9B9C-98DF96023D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDAC836-AC25-4512-9B9C-98DF96023D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDAC836-AC25-4512-9B9C-98DF96023D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDAC836-AC25-4512-9B9C-98DF96023D6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

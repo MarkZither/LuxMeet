@@ -6,10 +6,20 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.2" />
+    <PackageReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Polly" Version="5.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NokMeet.EFCore\LuxMeet.EFCore.csproj" />
+    <ProjectReference Include="..\LuxMeet.EFCoreTemp\LuxMeet.EFCoreTemp.csproj" />
+    <ProjectReference Include="..\NokMeet.Models\LuxMeet.DbModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Sqlite">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.data.sqlite.core\2.0.0\lib\netstandard2.0\Microsoft.Data.Sqlite.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
