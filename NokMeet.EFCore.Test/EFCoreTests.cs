@@ -4,7 +4,6 @@ using System;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
-using LuxMeet.EFCoreTemp;
 using LuxMeet.DbModels;
 
 namespace LuxMeet.EFCore.Test

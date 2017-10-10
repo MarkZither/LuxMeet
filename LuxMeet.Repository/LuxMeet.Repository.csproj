@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LuxMeet.EFCoreTemp\LuxMeet.EFCoreTemp.csproj" />
+    <ProjectReference Include="..\LuxMeet.EFCore\LuxMeet.EFCore.csproj" />
     <ProjectReference Include="..\NokMeet.Models\LuxMeet.DbModels.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,5 @@
 using LuxMeet.DbModels;
-using LuxMeet.EFCoreTemp;
+using LuxMeet.EFCore;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -64,7 +64,7 @@ namespace LuxMeet.Repository.Test
                 context.Database.EnsureCreated();
 
                 EventsRepository rep = new EventsRepository(connection);
-                rep.accessToken = "xd8cfc758860187bc6e0cc76e33d6d10b65e505e2d1c9864a40d7c91f268131ec";
+                rep.accessToken = "";
                 await rep.GetRemote();
             }
         }

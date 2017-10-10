@@ -1,13 +1,16 @@
-using AutoMapper;
-using LuxMeet.EFCoreTemp;
-using LuxMeet.Repository;
-using LuxMeet.ViewModels;
-using Microsoft.Data.Sqlite;
-using Microsoft.EntityFrameworkCore;
-using Shouldly;
 using System;
 using System.Threading.Tasks;
+
+using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
+
+using AutoMapper;
+using Shouldly;
 using Xunit;
+
+using LuxMeet.EFCore;
+using LuxMeet.Repository;
+using LuxMeet.ViewModels;
 
 namespace LuxMeet.Core.Test
 {
@@ -32,7 +35,8 @@ namespace LuxMeet.Core.Test
                 EventsRepository rep = new EventsRepository(connection);
                 LuxMeet.DbModels.Event _event = await rep.GetRemote();
 
-                var config = new MapperConfiguration(cfg => cfg.CreateMap<LuxMeet.DbModels.Event, LuxMeet.ViewModels.Event>());
+                var config = new MapperConfiguration(cfg => cfg.CreateMap<LuxMeet.DbModels.Event,
+                    LuxMeet.ViewModels.Event>());
                 config.AssertConfigurationIsValid();
 
                 // Perform mapping

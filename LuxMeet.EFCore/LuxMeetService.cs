@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LuxMeet.EFCoreTemp
+namespace LuxMeet.EFCore
 {
     public class LuxMeetService
     {

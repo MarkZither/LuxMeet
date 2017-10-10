@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LuxMeet.EFCoreTemp
+namespace LuxMeet.EFCore
 {
     public class LuxMeetContext : DbContext
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using LuxMeet.EFCoreTemp;
+using LuxMeet.EFCore;
 using System.Linq;
 using LuxMeet.DbModels;
 using System.Collections.Generic;
@@ -44,7 +44,7 @@ namespace LuxMeet.Repository
             //    RequestUri = new Uri("https://api.tidyhq.com/v1/events/16139"),
             //    Method = HttpMethod.Get,
             //};
-            //request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "d8cfc758860187bc6e0cc76e33d6d10b65e505e2d1c9864a40d7c91f268131ec"); 
+            //request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", ""); 
             var policy = Policy
                   .HandleResult<HttpResponseMessage>(r => r.StatusCode == HttpStatusCode.Unauthorized)
             .RetryAsync(1, (exception, retryCount) =>
@@ -52,13 +52,13 @@ namespace LuxMeet.Repository
                 GetTidyHQAuthToken();
             });
 
-            HttpResponseMessage result = await policy.ExecuteAsync(GetEventFromTidyHQ); // retry once
-            HttpResponseMessage response = await GetEventFromTidyHQ();
+            HttpResponseMessage response = await policy.ExecuteAsync(GetEventFromTidyHQ); // retry once
+            //HttpResponseMessage response = await GetEventFromTidyHQ();
+            //var obj = JsonConvert.DeserializeObject<Event>(
+            //    response.Content.ReadAsStringAsync().Result);
             var obj = JsonConvert.DeserializeObject<Event>(
                 response.Content.ReadAsStringAsync().Result);
-            var obj2 = JsonConvert.DeserializeObject<Event>(
-                result.Content.ReadAsStringAsync().Result);
-            return obj2;
+            return obj;
         }
 
         private async Task<RequestTokenObject> GetTidyHQAuthToken()

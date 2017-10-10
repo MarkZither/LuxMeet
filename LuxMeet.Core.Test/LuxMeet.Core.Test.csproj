@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LuxMeet.Core\LuxMeet.Core.csproj" />
-    <ProjectReference Include="..\LuxMeet.EFCoreTemp\LuxMeet.EFCoreTemp.csproj" />
+    <ProjectReference Include="..\LuxMeet.EFCore\LuxMeet.EFCore.csproj" />
     <ProjectReference Include="..\LuxMeet.Repository\LuxMeet.Repository.csproj" />
     <ProjectReference Include="..\LuxMeet.ViewModels\LuxMeet.ViewModels.csproj" />
     <ProjectReference Include="..\NokMeet.Models\LuxMeet.DbModels.csproj" />
